@@ -2,30 +2,65 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <link rel="icon" type="image/x-icon" href="./huojian.ico">
   <title>CSS Transforms and Transitions</title>
   <style>
-    #box {
-      position:absolute;
-      top:100px;
-      left:100px;
-      width:200px;
-      height: 200px;
-      background-color: red;
-            transition: transform 2s;
-      -webkit-transition: -webkit-transform 2s;
-      -moz-transition: -moz-transform 2s;
-      -o-transition: -o-transform 2s;
-    }
-    #box:hover{
-      transform:rotate(45deg);
-      -webkit-transform:rotate(45deg);
-      -moz-transform:rotate(45deg);
-      -o-transform:rotate(45deg);
-      -ms-transform:rotate(45deg);
-    }
+* {
+  background-color:rgba(0,0,0,0.1);
+}
+.a {
+  width: 360px;
+  height: 360px;
+}
+div {
+  width:100px;
+  height:100px;
+  margin:10px;
+  float:left;
+}
+section {
+  background-color:red;
+  height:100px;
+  margin-left:0px;
+  margin-right:0px;
+  transition: all .3s;
+}
+section:hover {
+  margin-left:-10px;
+  margin-right:-10px;
+  
+}
   </style>
 </head>
 <body>
-  <div id="box"></div>
+<div class="a"> 
+  <div>
+    <section></section>
+  </div>
+  <div>
+    <section></section>
+  </div>
+  <div>
+    <section></section>
+  </div>
+  <div>
+    <section></section>
+  </div>
+  <div>
+    <section></section>
+  </div>
+  <div>
+    <section></section>
+  </div>
+  <div>
+    <section></section>
+  </div>
+  <div>
+    <section></section>
+  </div>
+  <div>
+    <section></section>
+  </div>
+</div>  
 </body>
 </html>
